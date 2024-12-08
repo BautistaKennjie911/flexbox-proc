@@ -2,36 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <ul>
-        <li>
-            <h1><a href="index.html">pinduta ni</a></h1>
-        </li>
-    </ul>
-    
-        
-<h1>
-                AKO DEI SI BAUTISTA KENNJIE R. 
-</h1> 
-        
-    
+    <title>Page title</title>
+    <link rel="stylesheet" href="style2.css">
 
-        
-<h1>
-                SAKTO BANI SIR ?  
-</h1> 
-        
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    gap: 4px;
+    height: calc(100vh - 8px);
+}
+
+nav {
+    border: 1px solid black;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.navcontent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.navcontent2 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.redbox {
+    background: blue;
+    height: 10px;
+    width: 20px;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    gap: 4px;
+}
+
+main {
+    border: 1px solid black;
+    display: flex;
+    flex-grow: 1;
     
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     
-        
-<h1>
-                OKEY CLASS DISSMIS  
-</h1> 
-        
+    overflow: auto;
+}
+
+.mainbox {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    gap: 4px;   
+    padding: 4px;
+    align-content: center;
+}
+
+.boxes {
+   border: 1px solid black; 
+   height: 32px;
+   width: 32px;
+}
+
+aside {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.asidebox {
+    width: 20vw;
+    border: 1px solid black;
+    height: 3vh;
+}
+
+.box {
+    background: red;
+    height: 30px;
+    width: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
     
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 4pxu;
+    align-items: center;
+}
+
+.footerboxleft {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.footerboxright {
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+.footerbox {
+    background: red;
+    height: 10px;
+    width: 20px;
+}
+</style>
+
+<body>
+    <nav>
+        <div class="navcontent1">
+            <div class="box"></div>
+            <div>FLEXBOX</div>
+        </div>
+        <div class="navcontent2">
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+            <div class="redbox"></div>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <main>
+            <div class="mainbox">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+            </div>
+            <div class="mainbox">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footerboxleft">
+            <div class="box"></div>
+            <div class="footertext">
+                <div>FLEXBOX</div>
+                <div>@Copyright</div>
+            </div>
+        </div>
+        
+        <div class="footerboxright">
+            <div class="footerbox"></div>
+            <div class="footerbox"></div>
+            <div class="footerbox"></div>
+            <div class="footerbox"></div>
+            <div class="footerbox"></div>
+        </div>
+    </footer>
     
 </body>
 </html>
