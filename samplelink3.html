@@ -2,225 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page title</title>
-    <link rel="stylesheet" href="style3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox3</title>
 </head>
 <style>
-    * {
-    padding: 0;
-    margin: 0;
-}
+    
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    padding: 4px;
-    height: calc(100vh - 8px);
-    gap: 4px;
-}
+    body{
+        padding: 4px;
+        height: calc(100vh - 8px);
+    }
 
-nav, main, aside, footer {
-    border: 1px solid black;
-}
+    .border{
+        border: 1px solid black;
+    }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 4px;
-}
+    .d-flex{
+        display: flex;
+    }
 
-.navleft {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-}
+    .g-5{
+        gap: 5px;
+    }
 
-.navright {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-}
+    .p-4{
+        padding: 4px
+    }
 
-.redbox {
-    background: red;
-    height: 30px;
-    width: 30px;
-}
+    .f-grow-1{
+        flex-grow: 1;
+    }
 
-.redrectangle {
-    background: red;
-    height: 20px;
-    width: 35px;
-}
+    .f-grow-2{
+        flex-grow: 2;
+    }
 
+    .f-grow-3{
+        flex-grow: 3;
+    }
+    
+    .align-content-start{
+        align-content: flex-start ;
+    }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    gap: 4px;
-}
+    .align-content-end{
+        align-content: flex-end;
+    }
 
-main {
-    display: flex;
-    flex-grow: 1;
-    padding: 4px;
-    gap: 4px;
-}
+    .align-content-center{
+        align-content: center;
+    }
 
-.mainbox {
-    display: flex;
-    padding: 4px;
-    border: 1px solid black;
-    flex-wrap: wrap;
-    gap: 4px;
-    width: 50%;
-    align-content: flex-start;
-}
+    .align-items-start{
+        align-items: flex-start;
+    }
+    
+    .align-items-end{
+        align-items: flex-end;
+    }
 
-.mainbox1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 20px;
-}
+    .align-items-{
+        align-items: center;
+    }
+    .justify-content-start{
+        justify-content: flex-start;
+    }
 
+    .justify-content-end{
+        justify-content: flex-end;
+    }
 
-aside {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 4px;
-}
+    .justify-content-center{
+        justify-content: center;
+    }
 
-.asidebox {
-    display: flex;
-    border: 1px solid black;
-    width: 15vw;
-    height: 5vh;
-}
+    .justify-items-start{
+        justify-items: flex-start;
+    }
 
-.smallboxes {
-    border: 1px solid black;
-    height: 60px;
-    width: 60px;
-}
+    .justify-items-end{
+        justify-items: flex-end;
+    }
+    
+    .justify-items-center{
+        justify-items: center;
+    }
+    .f-direction-column{
+        flex-direction: column;
+    }
 
-.bigbox {
-    border: 1px solid black;
-    height: 140px;
-    width: 180px;
-}
+    .f-direction-row{
+        flex-direction: row;
+    }
+    
+    .nav{
+        padding: 3px;
+        gap: 5px;
+    }
+    .nav-box1{
+        border: none;
+        background-color: rgb(255, 81, 0);
+        padding: 15px;
+        height: 0.5vh;
+        width: 0.5vw;
+    }
+    .navboxs121{
+        margin-right: auto;
 
-footer {
-    padding: 4px;
-    gap: 4px;
-}
+    }
+    .nav-boxleft{
+        align-content: center;
+       
+    }
+    .boxleft4{
+        
+        padding: 4px;
+        background-color: rgb(255, 60, 0);
+        border: none;
+        width: 2.2vw;
+        height: 2vh;     
+    }
+    .body2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .body1s{
+        margin: 4px;
+        padding: 4px;
+        height: 2.9vh;
+    }
+    .body2s{
+        padding: 4px;
+        margin: 2px;
+        height: 25vh;
+        width: 4.90vw;       
+    }
 
-.footertop{
-    align-items: center;
-    display: flex;
-    gap: 4px;
-}
+    .footerbox{
+        padding: 9.5px;
+        background-color: rgb(255, 72, 0);
+        border: none;
 
-.footerbot {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
+    }
+    .body3{
+        gap: 2px;
+    }
+    .body3s{
+        padding: 4px;
+        flex-grow: 1;
+    }
+    </style>
+<body class="d-flex g-5 f-direction-column">
 
-.redboxes {
-    display: flex;
-    gap: 4px;
-    flex-direction: row;
-}
-.smallbox {
-    background: red;
-    height: 10px;
-    width: 10px;
-}
-
-.hr {
-    padding: 4px;
-}
-
-</style>
-<body>
-    <nav>
-        <div class="navleft">
-            <div class="redbox"></div>
-            <div>
-                <p>FLEXBOX</p>
-            </div>
+    <div class="nav border d-flex ">
+        <div class="navboxs121  g-5 d-flex">
+           <div class="nav-box1 d-flex"></div>
+           <div class="flexbox align-content-center">FLEXBOX</div>
         </div>
-        <div class="navright">
-            <div class="redrectangle"></div>
-            <div class="redrectangle"></div>
-        </div>
-    </nav>
-    <div class="content">
-        <main>
-            <div class="mainbox">
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-                <div class="smallboxes"></div>
-            </div>
-            <div class="mainbox mainbox1">
-                <div class="bigbox"></div>
-                <div class="bigbox"></div>
-                <div class="bigbox"></div>
-                <div class="bigbox"></div>
-            </div>
-        </main>
-        <aside>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-            <div class="asidebox"></div>
-        </aside>
+
+    <div class="nav-boxleft d-flex g-5 p-4 align-items-center" >
+            <div class="boxleft4 border"></div>
+            <div class="boxleft4 border"></div>
+            <div class="boxleft4 border"></div>
+            <div class="boxleft4 border"></div>
     </div>
-    <footer>
-        <div class="footertop">
-            <div class="redbox"></div>
-            <div>
-                <p>FLEXBOX</p>
-            </div>
-        </div>
-        <div class="hr">
-            <hr>
-        </div>
-        <div class="footerbot">
-            <div class="redboxes">
-                <div class="smallbox"></div>
-                <div class="smallbox"></div>
-                <div class="smallbox"></div>
-                <div class="smallbox"></div>
-                <div class="smallbox"></div>
-            </div>
-            <div class="text">
-                <p>@Copyright All rights reserved</p>
-            </div>
-        </div>
-    </footer>
+    </div>
+
+    <div class="main d-flex f-grow-1 g-5">
+     <div class="body1 border f-grow-1 ">
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+           <div class="body1s border"></div>
+     </div>
+    <div class="body2 border f-grow-3 d-flex">
+           <div class="body2s border"></div>
+           <div class="body2s border"></div>
+           <div class="body2s border"></div>
+           <div class="body2s border"></div>
+           <div class="body2s border"></div>
+           <div class="body2s border"></div>
+    </div>
+    <div class="body3 border f-grow-1 d-flex f-direction-column p-4">
+           <div class="body3s border"></div>
+           <div class="body3s border"></div>
+           <div class="body3s border"></div>
+    </div>
+    </div>
+    
+    <div class="footer border g-5 p-4 d-flex f-direction-column">
+      <div class="footerbox4 d-flex g-5 align-content-center justify-content-center">
+            <div class="footerbox border"></div>
+            <div class="footerbox border"></div>
+            <div class="footerbox border"></div>
+            <div class="footerbox border"></div>
+            <div class="footerbox border"></div>
+      </div>
+
+       <div class="copy d-flex align-content-center justify-content-center">
+        Copyright Flexbox.
+       </div>
+    </div>
 </body>
 </html>

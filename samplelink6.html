@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexbox6</title>
 </head>
 <style>
     * {
@@ -20,7 +20,10 @@
 
     }
 
-    nav,main,aside,footer {
+    nav,
+    main,
+    aside,
+    footer {
         border: 1px solid black;
         padding: 4px;
     }
@@ -40,7 +43,7 @@
     }
 
     .navboxone {
-        background-color: rgb(255, 77, 0);
+        background-color: red;
         height: 40px;
         width: 40px;
     }
@@ -52,7 +55,7 @@
     }
 
     .navtwoboxes {
-        background-color: rgb(255, 77, 0);
+        background-color: red;
         height: 30px;
         width: 50px;
     }
@@ -66,21 +69,23 @@
 
     main {
         display: flex;
+        flex-direction: row;
         flex-grow: 1;
         gap: 4px;
     }
 
 
-    .kulong {
+    .kulong{
         display: flex;
         flex-grow: 1;
+    
     }
 
     .middlefirst {
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        align-items: baseline;
         flex-grow: 1;
         width: 50%;
         border: 1px solid black;
@@ -108,7 +113,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-content: flex-start;
-        width: 50%;
+        width: 50%; 
         gap: 4px;
         padding: 4px;
         border: 1px solid black;
@@ -143,7 +148,7 @@
     }
 
     .footerbox {
-        background-color: rgb(255, 89, 0);
+        background-color: red;
         height: 40px;
         width: 40px;
     }
@@ -162,7 +167,7 @@
     }
 
     .footercubes {
-        background-color:rgb(255, 102, 0);
+        background-color: red;
         height: 25px;
         width: 25px;
     }
@@ -190,18 +195,6 @@
 
     <div class="middle">
         <main>
-            <div class="kulong">
-                <div class="middlefirst">
-                    <div class="middleboxes1">
-                        <div class="middlefirstboxes1"></div>
-                        <div class="middlefirstboxes1"></div>
-                    </div>
-                    <div class="middleboxes2">
-                        <div class="middlefirstboxes2"></div>
-                        <div class="middlefirstboxes2"></div>
-                    </div>
-                </div>
-            </div>
 
             <div class="middlesecond">
                 <div class="middlesecondboxes"></div>
@@ -219,6 +212,19 @@
                 <div class="middlesecondboxes"></div>
                 <div class="middlesecondboxes"></div>
                 <div class="middlesecondboxes"></div>
+            </div>
+
+            <div class="kulong">
+                <div class="middlefirst">
+                    <div class="middleboxes1">
+                        <div class="middlefirstboxes1"></div>
+                        <div class="middlefirstboxes1"></div>
+                    </div>
+                    <div class="middleboxes2">
+                        <div class="middlefirstboxes2"></div>
+                        <div class="middlefirstboxes2"></div>
+                    </div>
+                </div>
             </div>
         </main>
 
